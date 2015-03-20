@@ -19,19 +19,19 @@
             <button id="tile4" class="tile"></button>
         </div>
     </body>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script type="text/javascript">
         function startTimer(duration, display) {
             var seconds = duration;
             var interval = setInterval(function () {
                 seconds=seconds-1;
-                display.textContent = seconds;
+                display.html(seconds);
 
                 if (seconds <= 0) {
                     var result=Number($('#result').html());
                     $('#timer_label').css("display", "none");
                     $('#timer').css("display", "none");
-                    $('#btn_start').css("display", "none");
+                    $('#btn_start').css("display", "inline-block");
                     alert("Conseguiu fazer "+result+" pontos!");
                     clearInterval(interval);
                 }
@@ -56,7 +56,7 @@
             $(tile_array[random]).css("display", "inline-block");
             $("#timer_label").css("display", "inline-block");
             $("#timer").css("display", "inline-block");
-            var seconds_to_play = 20, display = document.querySelector('#timer');
+            var seconds_to_play = 20, display = $('#timer');
             $('#timer').html(seconds_to_play);
             startTimer(seconds_to_play, display);
         });
