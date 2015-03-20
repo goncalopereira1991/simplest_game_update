@@ -1,0 +1,53 @@
+#tile1{
+	background-color:green;
+	position: absolute;
+}
+
+#tile2{
+	background-color:blue;
+	position: absolute;
+	margin-left: 70px;
+}
+
+#tile3{
+	background-color: red;
+	position: absolute;
+	margin-top: 60px;
+}
+
+#tile4{
+	background-color: yellow;
+	display: inline-block;
+	position: absolute;
+	margin-left: 70px;
+	margin-top: 60px;
+}
+
+.tile{
+	width: 50px;
+	height: 50px;
+	margin: 10px;
+	display: inline-block;
+}
+
+#result{
+	display: inline-block;
+}
+
+#timer_label{
+	display: none;
+}
+
+#timer{
+	display: none;
+}
+
+#result_str{
+	margin-left: 10px;
+}
+
+#btn_start{
+	margin-left: 10px;
+	width: 100px;
+	height: 25px;
+}
